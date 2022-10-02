@@ -15,16 +15,23 @@ const {
 	makeInMemoryStore,
 	default: Baileys,
 	useSingleFileAuthState,
+        useMultiFileAuthState,
 	jidDecode,
 	DisconnectReason,
 	delay,
 } = require("@adiwajshing/baileys");
 
 try {
-var { state, saveState } = useSingleFileAuthState(path.join(__dirname, `./lib/database/${config.session ? config.session : "session"}.json`), log({ level: "silent" }));
-} catch {
-fs.unlinkSync(`./lib/database/${config.session ? config.session : "session"}.json`)
-var { state, saveState } = useSingleFileAuthState(`./lib/database/${config.session ? config.session : "session"}.json`);
+const authFile = `${opts._[0] || 'sessions'}`
+global.isInit = !fs.existsSync(authFile)
+const { state, saveState, saveCreds } = await useMultiFileAuthState(authFile)
+
+const connectionOptions = {
+  printQRInTerminal: true,
+  auth: state,
+  logger: P({ level: 'silent' }),
+  version: [2, 2204, 13]
+}
 }
 
 
