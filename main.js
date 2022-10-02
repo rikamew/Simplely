@@ -1,3 +1,4 @@
+(async () => {
 require("./global")
 const fs = require("fs");
 const path = require("path");
@@ -15,7 +16,7 @@ const {
 	makeInMemoryStore,
 	default: Baileys,
 	useSingleFileAuthState,
-        useMultiFileAuthState,
+	useMultiFileAuthState,
 	jidDecode,
 	DisconnectReason,
 	delay,
@@ -29,11 +30,9 @@ const { state, saveState, saveCreds } = await useMultiFileAuthState(authFile)
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
-  logger: P({ level: 'silent' }),
+  logger: P({ level: 'debug' }),
   version: [2, 2204, 13]
 }
-}
-
 
 moment.locale("id");
 const attr = {};
@@ -128,7 +127,7 @@ async function start(){
   
   console.clear();
   console.log(color('------------------------------------------------------------------------', 'white'))
-  console.log(color(figlet.textSync('Senkuu - MD Recode', {font: 'Standard',horizontalLayout: 'default',vertivalLayout: 'default',width: 80,whitespaceBreak: false }), 'red'))
+  console.log(color(figlet.textSync('Base Recode by BOTCAHX', {font: 'Standard',horizontalLayout: 'default',vertivalLayout: 'default',width: 80,whitespaceBreak: false }), 'red'))
   console.log(color('------------------------------------------------------------------------', 'white'))
   console.log(color('[CREATOR]', 'aqua'), color(config.author, 'magenta'))
   console.log(color('[BOT]', 'aqua'), color('BOT is now Online!', 'magenta'))
