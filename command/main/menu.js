@@ -82,7 +82,7 @@ module.exports = {
 			menu += monospace(" ❏ Date : " + date) + "\n"
 			menu += monospace(" ❏ Time : " + time) + "\n"
 		  menu += monospace(" ❏ Speed :  " + processTime(msg.messageTimestamp, moment()) + " Seccond") + "\n\n"
-		  menu += "*This Bot script is : https://github.com/xzeera-id/Senkuu-MD*\n*Script Recode  : https://github.com/BOTCAHX/Senkuu-MD*\n_The sign ❌ means the Error or Feature is being Disabled by the Owner!!_\n\n"
+		  menu += "*This Bot script is : https://github.com/rika/Simpely*\n*Script Recode  : https://github.com/KafuuChann/lmao*\n_The sign ❌ means the Error or Feature is being Disabled by the Owner!!_\n\n"
 			menu += monospace(`Halo, @${sender.split("@")[0]} Here my Command List`) +`\n\n`;
 			const keys = Object.keys(category)
 			menu += "*乂 CATEGORY MENU*\n"
@@ -94,7 +94,7 @@ module.exports = {
 			  menu += `*乂 ${key.toUpperCase()}*\n`
 			  menu += `${category[key].map((cmd) => monospace(` × ${cmd.options.noPrefix ? "" : pref}${cmd.name} ${map.lockcmd.get(cmd.name) ? "❌" : ""}`)).join("\n")} ` + "\n\n"
 			}
-			menu += `*Thanks To:*\n• Senkuu\n• ZeraaID\n• Zynfinity\n• BOTCAHX\n\n`
+			menu += `*Thanks To:*\n• Senkuu\n• ZeraaID\n• Zynfinity\n• Necoree\n\n`
 			menu += `_Note : Type ${prefix}help <command> to view command info_`
 			
 		/*	const buttons = [
@@ -102,7 +102,7 @@ module.exports = {
            { buttonId: `.ping`,buttonText:{displayText: 'Speed'}, type : 1}
            ]
         const buttonMessage = {
-           image: {url: "https://telegra.ph/file/642a95448d0d2d4750a37.jpg"},
+           image: {url: "https://telegra.ph/file/f362e3040573954133f8a.jpg"},
            caption: menu,
            footer: "Bot Still in Development stage",
            buttons: buttons,
