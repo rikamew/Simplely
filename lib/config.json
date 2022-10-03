@@ -1,17 +1,17 @@
 {
-  "thumb": "https://telegra.ph/file/f9b2ed3ff30d538f086ae.jpg",
-  "namebot": "BOTCAHX",
-  "botNumber": "19712702364@s.whatsapp.net",
-  "owner": ["6282221792667@s.whatsapp.net"],
-  "instagram": "https://instagram.com/prm2.0",
-  "author": "BOTCAHX",
+  "thumb": "https://telegra.ph/file/f362e3040573954133f8a.jpg",
+  "namebot": "Core",
+  "botNumber": "12268558289@s.whatsapp.net",
+  "owner": ["62887435006141@s.whatsapp.net"],
+  "instagram": "https://instagram.com/Juaan1991",
+  "author": "?",
   "session": "senku-md",
-  "email": "tioclkp02@gmail.com",
+  "email": "rika.meww@gmail.com",
   "self": false,
   "limit": { "limitUser": 100, "gameLimitUser": 100, "gameLimitPremium": 300 },
   "packInfo":{
-    "packname": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-    "author": "BOTCAHX"
+    "packname": "Neco",
+    "author": "Bot Wangsaff"
   },
   "ignore": {
 		"directory": ["umum"]
